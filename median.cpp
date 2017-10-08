@@ -10,8 +10,7 @@ int main() {
 	ofstream fout;
 	fin.open("median.inp");
 	fout.open("median.out");
-
-
+	
 	int m, n, r, c, i, j, k;
 	int x[100][100], y[100];
 	int tdX = 1, tdY = 1;
@@ -24,7 +23,6 @@ int main() {
 	for (j = 1; j <= n; j++)
 		for (i = 1; i <= m; i++)
 			fin >> x[i][j];
-
 	y[0] = r * c;
 	k = 0;
 	while (true)
@@ -46,11 +44,6 @@ int main() {
 				break;
 		}
 	}
-
-
-
-	system("pause");
-
 	fin.close(); fout.close();
 	return 0;
 }
